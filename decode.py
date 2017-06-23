@@ -13,7 +13,7 @@ def append_dic(dic, pre, char_set):
         if count[value] == 0:
             dic[value] = pre+ key
         else:
-            dic[value] = pre + key + str(count[value])
+            dic[value] = pre + key + "_" + str(count[value])
         count[value] = count[value] + 1
     print("done:" + pre)
     return dic
